@@ -1,0 +1,29 @@
+while True:
+    try:
+        n = int(input("height: "))
+        if n > 0 and n < 24:
+            break
+        else:
+            print("Введите число в пределах от 1 до 23.")
+    except ValueError:
+        print("Некорректный ввод! Введите положительное целое число.")
+
+
+maxL = n
+def town(n):
+    tab = " "
+    if n == 1:
+        return
+    else:
+        town(n - 1)
+        if n == maxL:
+            tab = ""
+        else:
+            tab = " "
+        tab = tab * (maxL - n)
+        for j in range(n):
+            tab += "#"
+        print(tab)
+
+
+town(n)
