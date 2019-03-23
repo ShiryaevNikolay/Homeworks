@@ -12,7 +12,7 @@ while True:
 maxL = n
 def town(n):
     tab = " "
-    if n == 1:
+    if n == 0:
         return
     else:
         town(n - 1)
@@ -21,7 +21,7 @@ def town(n):
         else:
             tab = " "
         tab = tab * (maxL - n)
-        for j in range(n):
+        for j in range(n + 1):
             tab += "#"
         print(tab)
 
