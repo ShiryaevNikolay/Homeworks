@@ -9,7 +9,7 @@ while True:
         print("Некорректный ввод! Введите положительное целое число.")
 
 
-maxL = n
+maxL = n             #запоминаем высоту
 def town(n):
     tab = " "
     if n == 0:
@@ -20,9 +20,9 @@ def town(n):
             tab = ""
         else:
             tab = " "
-        tab = tab * (maxL - n)
+        tab = tab * (maxL - n)     #добавляем нужное кол-во отступов слева
         for j in range(n + 1):
-            tab += "#"
+            tab += "#"             #добавляем нужное кол-во блоков
         print(tab)
 
 
