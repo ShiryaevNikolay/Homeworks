@@ -38,6 +38,5 @@ def counting_the_number_of_coins(coins, change):
         counting_the_number_of_coins(coins, change)
 
 
-if number_of_change > 0:
-    print("Минимальное количество монет, которые должен отдать кассир: ")
-    counting_the_number_of_coins(0, number_of_change)
+print("Минимальное количество монет, которые должен отдать кассир: ")
+counting_the_number_of_coins(0, number_of_change)
