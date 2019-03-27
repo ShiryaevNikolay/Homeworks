@@ -23,13 +23,16 @@ def counting_the_number_of_coins(coins, change):
         counting_the_number_of_coins(coins, change)
     elif change >= 10:
         coins += 1
-        change -= 10counting_the_number_of_coins(coins, change)
+        change -= 10
+        counting_the_number_of_coins(coins, change)
     elif change >= 5:
         coins += 1
-        change -= 5counting_the_number_of_coins(coins, change)
+        change -= 5
+        counting_the_number_of_coins(coins, change)
     elif change >= 1:
         coins += 1
-        change -= 1counting_the_number_of_coins(coins, change)
+        change -= 1
+        counting_the_number_of_coins(coins, change)
 
 
 if number_of_change > 0:
