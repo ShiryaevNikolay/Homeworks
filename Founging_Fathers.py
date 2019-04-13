@@ -67,7 +67,7 @@ while True: # Проверка на ошибки выбора операции
         print("\nОшибка ввода. Введите целое положительное число.")
 
 if operation == 1: # Выполнение операции "соркировка"
-    sorted_list = collections.OrderedDict(sorted(list.items()))
+    sorted_list = collections.OrderedDict(sorted(list.items())) # Отсортированный массив по ключам
     for key, value in sorted_list.items():
         print(key, ",    Язык программирования: ", value)
 else: # Выполнение операции "нахождение языка программирования"
